@@ -6,6 +6,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import foodplus.FoodPlus;
 
+
 public class ModItems {
     public static Item register(Item item, String id) {
 		// Create the identifier for the item.
