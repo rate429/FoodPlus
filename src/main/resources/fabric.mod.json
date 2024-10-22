@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "food-plus",
+	"version": "${version}",
+	"name": "Food+",
+	"description": "Adds a ton of food!",
+	"authors": [
+		"rate429"
+	],
+	"contact": {
+		"sources": "https://github.com/rate429/MoreFood"
+	},
+	"license": "MIT",
+	"icon": "assets/food-plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"foodplus.FoodPlus"
+		],
+		"client": [
+			"foodplus.FoodPlusClient"
+		],
+		"fabric-datagen": [
+			"foodplus.FoodPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"food-plus.mixins.json",
+		{
+			"config": "food-plus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

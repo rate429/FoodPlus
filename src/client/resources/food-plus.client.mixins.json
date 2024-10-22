@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "foodplus.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"FoodPlusClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
